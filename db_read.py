@@ -15,14 +15,13 @@ def get_record_data(db_con, table_name):
     except Exception as e:
         raise e
 
-# @@@ EXECUTION STARTS HERE @@@ #
+if __name__ == "__main__":
+    # Open database #
+    db_con = db_ops.openDB('job.db')
 
-# Open database #
-db_con = db_ops.openDB('job.db')
+    get_record_data(db_con, 'Job Opening')
+    get_record_data(db_con, 'Job Application')
+    # Fetch data #
 
-get_record_data(db_con, 'Job Opening')
-get_record_data(db_con, 'Job Application')
-# Fetch data #
-
-# Close database #
-db_ops.closeDB(db_con)
+    # Close database #
+    db_ops.closeDB(db_con)
