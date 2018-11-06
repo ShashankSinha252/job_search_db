@@ -10,6 +10,7 @@ def get_record_data(db_con, table_name):
         if db_data == None:
             print("No record found")
         else:
+            print("\nTable : " + table_name + '\n')
             for data in db_data:
                 print(str(data))
     except Exception as e:
