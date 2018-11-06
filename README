@@ -1,1 +1,14 @@
+### About ###
+
 Small database to track companies, job listing and hiring process
+
+### Usage ###
+
+Move content of sample_data to source directory to create sample database.
+
+Use Makefile as follows:
+
+    make        Creates empty database (DEFAULT RULE)
+    make add    Add records to database
+    make dump   Dumps database to terminal
+    make clean  Deletes database
