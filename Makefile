@@ -7,5 +7,6 @@ read:
 
 clean:
 	rm -f job.db
+	rm -rf __pycache__
 
 .PHONY: add clean read
